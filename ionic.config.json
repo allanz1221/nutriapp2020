@@ -1,5 +1,7 @@
 {
   "name": "nutriAPP",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

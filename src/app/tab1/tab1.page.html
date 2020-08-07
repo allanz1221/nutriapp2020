@@ -1,17 +1,48 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      EVALUACIÓN
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
+
+  
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Evaluación</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<h3>Paciente: {{paciente}} <div [(ngModel)]="paciente"></div></h3>
+
+<ion-card>
+  <ion-item href="/tabs/test">
+    <ion-icon name="add-circle" slot="start"></ion-icon>
+    <ion-label>COMENZAR</ion-label>
+  </ion-item>
+  <ion-item href="/tabs/history">
+    <ion-icon name="add-circle" slot="start"></ion-icon>
+    <ion-label>HISTORIAL CLINICO</ion-label>
+  </ion-item>
+    <!--   <ion-item href="/imc">
+      <ion-icon name="add-circle" slot="start"></ion-icon>
+      <ion-label>Índice de masa corporal</ion-label>
+    </ion-item>
+  
+    <ion-item href="/bicompartimental">
+      <ion-icon name="add-circle" slot="start"></ion-icon>
+      <ion-label>Test Bi-compartimental</ion-label>
+    </ion-item>
+  
+    <ion-item href="/tetracompartimental">
+      <ion-icon name="add-circle" slot="start"></ion-icon>
+      <ion-label>Test Tetra-compartimental</ion-label>
+    </ion-item> -->
+  
+
+  </ion-card>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
